@@ -1,0 +1,24 @@
+.skills {
+    display: grid;
+    grid-template-columns: min(300px, 11rem) 1fr;
+    gap: 2rem;
+    height: 100%;
+    .about{
+      overflow: hidden;
+    }
+    .container {
+      border-left: 1px solid var(--primary);
+    }
+  }
+  
+  //media query remove about
+  @media screen and (max-width: 600px) {
+    .skills {
+      .about {
+        display: none;
+      }
+      .container {
+        border-left: 0;
+      }
+    }
+  }
